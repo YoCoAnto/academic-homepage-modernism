@@ -1,6 +1,6 @@
 /* Base Styles */
 :root {
-    --primary-color: #0066cc;
+    --primary-color: #4da5bd;
     --secondary-color: #f8f9fa;
     --text-color: #333;
     --light-text: #757575;
@@ -46,6 +46,26 @@ header {
     border-bottom: 1px solid var(--border-color);
 }
 
+header {
+    position: relative;                       /* 为了让伪元素绝对定位于此 */
+    background: url('assets/20250501_110059.jpg')   /* 你的背景图路径 */
+                center/cover no-repeat;       /* 居中铺满 */
+  }
+  
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;     /* 铺满整个 header */
+    background-color: rgba(255, 255, 255, 0.6);        /* 黑色 40% 透明遮罩，可按需调 */
+    pointer-events: none;                     /* 不阻止鼠标事件 */
+    z-index: 0;
+  }
+  
+.header-content {
+    position: relative;                       /* 把内容层级置于遮罩之上 */
+    z-index: 1;
+  }
+
 .header-content {
     display: flex;
     justify-content: space-between;
@@ -63,7 +83,7 @@ header {
 
 #profile-img {
     width: 180px;
-    height: 180px;
+    height: auto;
     border-radius: 4px;
     object-fit: cover;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -798,6 +818,29 @@ nav {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
 }
+
+/* 1. 让 pub-content 横向排列，子项同高 */
+.pub-content {
+    display: flex;
+    align-items: stretch;     /* 关键：让左右两块同高 */
+  }
+  
+  /* 2. 文字区自适宽度，图片区固定宽度 */
+  .pub-text {
+    flex: 1;                  /* 占用剩余空间 */
+  }
+  .pub-image-container {
+    flex: 0 0 240px;          /* 固定宽度 150px，可按需调整 */
+    margin: 0;                /* 清除任何默认外边距 */
+  }
+  
+  /* 3. 图片填充整个容器 */
+  .pub-image-container img {
+    width: 100%;              /* 横向填满 */
+    height: 100%;             /* 纵向填满，与内容同高 */
+    object-fit: cover;        /* 裁剪或缩放以保持比例并填满 */
+    display: block;           /* 取消默认行内间隙 */
+  }
 
 .authors {
     font-size: 0.9rem;
@@ -1534,3 +1577,4 @@ footer {
 .visitors-section .section-title {
     margin: 0 auto 2rem;
 }
+

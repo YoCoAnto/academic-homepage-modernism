@@ -212,67 +212,106 @@ function loadPublications() {
         .then(response => response.json())
         .then(publications => {
             publications.forEach(pub => {
+                // Create publication wrapper
                 const pubElement = document.createElement('div');
                 const classes = ['publication', pub.type];
                 if (pub.isFirstAuthor) classes.push('first-author');
                 pubElement.className = classes.join(' ');
-                
-                // Create publication number
+
+                // Publication number
                 const numberElement = document.createElement('span');
                 numberElement.className = 'pub-number';
                 numberElement.textContent = pub.number;
-                
-                // Create publication content container
+
+                // Content container: only text
                 const contentElement = document.createElement('div');
                 contentElement.className = 'pub-content';
-                
-                // Add title
-                const titleElement = document.createElement('h3');
-                titleElement.textContent = pub.title;
-                contentElement.appendChild(titleElement);
-                
-                // Add authors
+
+                const textContainer = document.createElement('div');
+                textContainer.className = 'pub-text';
+
+                // Title
+                // Inside your loadPublications() loop, after you've created pub.tags…
+const pdfTag = pub.tags.find(tag => tag.text === 'PDF' && tag.link);
+const pdfLink = pdfTag ? pdfTag.link : null;
+
+// Build the <h3> (with or without an <a>)
+const titleElement = document.createElement('h3');
+if (pdfLink) {
+  const a = document.createElement('a');
+  a.href = pdfLink;
+  a.target = '_blank';
+  a.rel = 'noopener';
+  a.textContent = pub.title;
+  titleElement.appendChild(a);
+} else {
+  titleElement.textContent = pub.title;
+}
+
+// Finally append into your textContainer
+textContainer.appendChild(titleElement);
+
+                // Authors
                 const authorsElement = document.createElement('p');
                 authorsElement.className = 'authors';
                 authorsElement.innerHTML = pub.authors;
-                contentElement.appendChild(authorsElement);
-                
-                // Add venue if it exists
+                textContainer.appendChild(authorsElement);
+
+                // Venue
                 if (pub.venue) {
                     const venueElement = document.createElement('p');
                     venueElement.className = 'venue';
                     venueElement.textContent = pub.venue;
-                    contentElement.appendChild(venueElement);
+                    textContainer.appendChild(venueElement);
                 }
-                
-                // Add tags
+
+                // Tags
                 const tagsContainer = document.createElement('div');
                 tagsContainer.className = 'pub-tags';
-                
                 pub.tags.forEach(tag => {
+                    let tagEl;
                     if (tag.link) {
-                        const tagLink = document.createElement('a');
-                        tagLink.href = tag.link;
-                        tagLink.className = `tag ${tag.class}`;
-                        tagLink.textContent = tag.text;
-                        // Add target="_blank" for links
-                        if (!tag.link.startsWith('#')) {
-                            tagLink.setAttribute('target', '_blank');
-                        }
-                        tagsContainer.appendChild(tagLink);
+                        tagEl = document.createElement('a');
+                        tagEl.href = tag.link;
+                        tagEl.setAttribute('target', '_blank');
                     } else {
-                        const tagSpan = document.createElement('span');
-                        tagSpan.className = `tag ${tag.class}`;
-                        tagSpan.textContent = tag.text;
-                        tagsContainer.appendChild(tagSpan);
+                        tagEl = document.createElement('span');
                     }
+                    tagEl.className = `tag ${tag.class}`;
+                    tagEl.textContent = tag.text;
+                    tagsContainer.appendChild(tagEl);
                 });
-                
-                contentElement.appendChild(tagsContainer);
-                
-                // Combine elements and add to publications list
+                textContainer.appendChild(tagsContainer);
+
+                contentElement.appendChild(textContainer);
+
+                // Image container: sibling of content
+                const imgContainer = document.createElement('div');
+                imgContainer.className = 'pub-image-container';
+
+                if (pub.image) {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = pub.image;
+                    imgElement.alt = pub.title;
+
+                    if (pdfLink) {
+                        // 有 PDF 链接，就用 <a> 包裹图片
+                        const a = document.createElement('a');
+                        a.href = pdfLink;
+                        a.target = '_blank';
+                        a.rel = 'noopener';
+                        a.appendChild(imgElement);
+                        imgContainer.appendChild(a);
+                    } else {
+                        // 没有链接直接插入图片
+                        imgContainer.appendChild(imgElement);
+                    }
+                }
+
+                // Assemble publication element
                 pubElement.appendChild(numberElement);
                 pubElement.appendChild(contentElement);
+                pubElement.appendChild(imgContainer);
                 publicationsList.appendChild(pubElement);
             });
         })

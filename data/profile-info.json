@@ -1,54 +1,24 @@
 {
-  "name": "ALEXANDER \"ALEX\" MORGAN 🍀",
-  "subtitle": "PhD@CS, WCU &nbsp;&nbsp;  BEng@EE, NTU<br><a href=\"#\">Center for AI and Smart Systems</a><br><a href=\"#\">Autonomous Systems and Connected Technologies Lab (ASCT)</a>",
+  "name": "Shaohan \"Anthony\" Shi 🦄",
+  "subtitle": "<a href=\"https://www.shanghaitech.edu.cn/\">Master, ShanghaiTech University<br></a><a href=\"https://sist.shanghaitech.edu.cn/\">School of Information Science and Technology</a><br><a href=\"https://faculty.sist.shanghaitech.edu.cn/liquan/\">ViSeer LAB, Visual and Data Intelligence Center</a>",
   "socialLinks": [
     {
       "type": "email",
-      "url": "mailto:alex.morgan@example.com",
+      "url": "mailto:shishh2023@shanghaitech.edu.cn",
       "icon": "<i class=\"fas fa-envelope\"></i>"
     },
     {
-      "type": "wechat",
-      "url": "assets/wechat.jpg",
-      "icon": "<i class=\"fab fa-weixin\"></i>",
-      "target": "_blank"
-    },
-    {
       "type": "googleScholar",
-      "url": "#",
+      "url": "https://scholar.google.com.hk/citations?user=5ULFAVEAAAAJ&hl=en&oi=ao",
       "icon": "<i class=\"fas fa-graduation-cap\"></i>",
       "target": "_blank"
     },
     {
-      "type": "linkedin",
-      "url": "#",
-      "icon": "<i class=\"fab fa-linkedin\"></i>",
-      "target": "_blank"
-    },
-    {
       "type": "github",
-      "url": "#",
+      "url": "https://github.com/YoCoAnto",
       "icon": "<i class=\"fab fa-github\"></i>",
-      "target": "_blank"
-    },
-    {
-      "type": "instagram",
-      "url": "#",
-      "icon": "<i class=\"fab fa-instagram\"></i>",
-      "target": "_blank"
-    },
-    {
-      "type": "dblp",
-      "url": "#",
-      "icon": "<img src=\"assets/dblp.svg\" alt=\"DBLP\" class=\"icon-svg\">",
-      "target": "_blank"
-    },
-    {
-      "type": "researchgate",
-      "url": "#",
-      "icon": "<i class=\"fab fa-researchgate\"></i>",
       "target": "_blank"
     }
   ],
-  "profileImage": "assets/profile.jpg"
+  "profileImage": "assets/photo.jpg"
 } 
