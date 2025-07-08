@@ -1578,3 +1578,31 @@ footer {
     margin: 0 auto 2rem;
 }
 
+/* 在小于 768px（或按需调整断点）时，publication 竖排，图片在下方 */
+@media (max-width: 768px) {
+    .publication {
+      display: flex;
+      flex-direction: column;    /* 整体纵向排列 */
+      align-items: stretch;      /* 子项同宽 */
+    }
+  
+    /* 内容块撑满宽度 */
+    .pub-content {
+      width: 100%;
+    }
+  
+    /* 图片容器放到内容下方 */
+    .pub-image-container {
+      flex: none;                /* 取消横向固定宽度 */
+      width: 100%;               /* 全宽 */
+      margin: 0;                 /* 清除左侧 margin */
+      margin-top: 0.75rem;       /* 你想要的上下间距 */
+    }
+  
+    /* 图片依然填满容器 */
+    .pub-image-container img {
+      width: 100%;
+      height: auto;              /* 保持比例 */
+      object-fit: cover;
+    }
+  }
