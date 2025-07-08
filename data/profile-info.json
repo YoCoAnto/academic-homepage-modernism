@@ -18,6 +18,24 @@
       "url": "https://github.com/YoCoAnto",
       "icon": "<i class=\"fab fa-github\"></i>",
       "target": "_blank"
+    },
+    {
+      "type": "orcid",
+      "url": "https://orcid.org/0009-0004-3384-8304",
+      "icon": "<i class=\"fab fa-orcid\"></i>",
+      "target": "_blank"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/ssh648076/",
+      "icon": "<i class=\"fab fa-instagram\"></i>",
+      "target": "_blank"
+    },
+    {
+      "type": "spotify",
+      "url": "https://stats.fm/ssh648076",
+      "icon": "<i class=\"fab fa-spotify\"></i>",
+      "target": "_blank"
     }
   ],
   "profileImage": "assets/photo.jpg"
