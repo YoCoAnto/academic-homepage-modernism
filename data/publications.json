@@ -48,6 +48,11 @@
         "text": "PDF",
         "class": "code-tag",
         "link": "https://ieeexplore.ieee.org/document/10693324"
+      },
+      {
+        "text": "Arxiv",
+        "class": "preprint-tag",
+        "link": "https://arxiv.org/abs/2407.14770"
       }
     ]
   }

@@ -872,8 +872,8 @@ nav {
 
 /* Gray color for preprint tags */
 .preprint-tag {
-    background-color: #f0f0f0;
-    color: #666;
+    background-color: #feecec;
+    color: #aa1a1a;
 }
 
 /* Light blue color for venue tags (accepted papers) */
@@ -892,6 +892,11 @@ nav {
 
 .code-tag:hover, .blog-tag:hover {
     background-color: #3f51b5;
+    color: white;
+}
+
+.preprint-tag:hover {
+    background-color: #aa1a1a;
     color: white;
 }
 
