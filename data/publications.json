@@ -5,7 +5,7 @@
     "authors": "Yuansong Xu, Shuhao Zhang, Yijie Fan, <strong><u>Shaohan Shi</u></strong>, Zhenhui Peng, Quan Li*",
     "type": "accept",
     "isFirstAuthor": false,
-    "image": "assets/revisemate.png",
+    "image": "assets/image/03.png",
     "tags": [
       {
         "text": "CSCW'25",
@@ -19,16 +19,17 @@
     "authors": "Yuansong Xu, Yuheng Shao, Jiahe Dong, <strong><u>Shaohan Shi</u></strong>, Chang Jiang, Quan Li*",
     "type": "accept",
     "isFirstAuthor": false,
-    "image": "assets/2503.jpeg",
+    "image": "assets/image/02.jpeg",
+    "pdf": "assets/pdf/02.pdf",
     "tags": [
       {
         "text": "CHI'25",
         "class": "venue-tag"
       },
       {
-        "text": "PDF",
+        "text": "DOI",
         "class": "code-tag",
-        "link": "https://dl.acm.org/doi/10.1145/3706598.3713772"
+        "link": "https://doi.org/10.1145/3706598.3713772"
       }
     ]
   },
@@ -38,14 +39,15 @@
     "authors": "Haoran Jiang, <strong><u>Shaohan Shi</u></strong>, Shuhao Zhang, Jie Zheng, Quan Li*",
     "type": "accept",
     "isFirstAuthor": false,
-    "image": "assets/123.jpeg",
+    "image": "assets/image/01.jpeg",
+    "pdf": "assets/pdf/01.pdf",
     "tags": [
       {
         "text": "VIS'24",
         "class": "venue-tag"
       },
       {
-        "text": "PDF",
+        "text": "DOI",
         "class": "code-tag",
         "link": "https://ieeexplore.ieee.org/document/10693324"
       },

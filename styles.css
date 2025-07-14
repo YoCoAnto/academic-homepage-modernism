@@ -890,6 +890,11 @@ nav {
     transition: all 0.3s ease;
 }
 
+.pdf-tag {
+    background-color: #e1f7e3;
+    color: #008d15;
+}
+
 .code-tag:hover, .blog-tag:hover {
     background-color: #3f51b5;
     color: white;
@@ -897,6 +902,11 @@ nav {
 
 .preprint-tag:hover {
     background-color: #aa1a1a;
+    color: white;
+}
+
+.pdf-tag:hover {
+    background-color: #008d15;
     color: white;
 }
 
