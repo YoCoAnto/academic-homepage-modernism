@@ -880,6 +880,8 @@ nav {
 .venue-tag {
     background-color: #e1f5fe;
     color: #0288d1;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 /* Light purple color for highlight tags, rating tags, and code/blog tags */
