@@ -235,13 +235,18 @@ function loadPublications() {
         // Title
         // Inside your loadPublications() loop, after you've created pub.tags…
         const doiTag = pub.tags.find((tag) => tag.text === "DOI" && tag.link);
-        const doiLink = doiTag ? doiTag.link : null;
+        const arxivTag = pub.tags.find(
+          (tag) => tag.text === "arXiv" && tag.link
+        );
+
+        const link = doiTag?.link || arxivTag?.link || null;
 
         // Build the <h3> (with or without an <a>)
         const titleElement = document.createElement("h3");
-        if (doiLink) {
+
+        if (link) {
           const a = document.createElement("a");
-          a.href = doiLink;
+          a.href = link;
           a.target = "_blank";
           a.rel = "noopener";
           a.textContent = pub.title;
@@ -286,36 +291,37 @@ function loadPublications() {
         textContainer.appendChild(tagsContainer);
 
         if (pub.pdf) {
-            const pdfTag = document.createElement('a');
-            pdfTag.href = pub.pdf;           // 例如 "assets/pdf/paper2.pdf"
-            pdfTag.target = '_blank';
-            pdfTag.rel = 'noopener';
-            pdfTag.className = 'tag pdf-tag';
-            pdfTag.textContent = 'PDF';
-            tagsContainer.appendChild(pdfTag);
-          }
+          const pdfTag = document.createElement("a");
+          pdfTag.href = pub.pdf; // 例如 "assets/pdf/paper2.pdf"
+          pdfTag.target = "_blank";
+          pdfTag.rel = "noopener";
+          pdfTag.className = "tag pdf-tag";
+          pdfTag.textContent = "PDF";
+          tagsContainer.appendChild(pdfTag);
+        }
 
         contentElement.appendChild(textContainer);
 
         // Image container: sibling of content
         const imgContainer = document.createElement("div");
         imgContainer.className = "pub-image-container";
-
         if (pub.image) {
           const imgElement = document.createElement("img");
           imgElement.src = pub.image;
           imgElement.alt = pub.title;
-
-          if (doiLink) {
-            // 有 doi 链接，就用 <a> 包裹图片
+        
+          const doiTag = pub.tags.find((tag) => tag.text === "DOI" && tag.link);
+          const arxivTag = pub.tags.find((tag) => tag.text === "arXiv" && tag.link);
+          const link = doiTag?.link || arxivTag?.link || null;
+        
+          if (link) {
             const a = document.createElement("a");
-            a.href = doiLink;
+            a.href = link;
             a.target = "_blank";
             a.rel = "noopener";
             a.appendChild(imgElement);
             imgContainer.appendChild(a);
           } else {
-            // 没有链接直接插入图片
             imgContainer.appendChild(imgElement);
           }
         }
