@@ -2,10 +2,10 @@
   {
     "number": 1,
     "title": "MEDebiaser: A Human-AI Feedback System for Mitigating Bias in Multi-label Medical Image Classification",
-    "authors": "<strong><u>Shaohan Shi</u></strong>, Yuheng Shao, Haoran Jiang, Yunjie Yao, Zhijun Zhang, Xu Ding, Quan Li*",
+    "authors": "<strong><u>Shaohan Shi</u></strong>, Yuheng Shao, Haoran Jiang, Yunjie Yao, Zhijun Zhang, Xu Ding*, Quan Li*",
     "type": "accept",
     "isFirstAuthor": true,
-    "image": "assets/image/05.png",
+    "image": "assets/image/05.jpg",
     "tags": [
       {
         "text": "UIST'25",
