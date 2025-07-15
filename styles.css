@@ -905,6 +905,11 @@ nav {
     color: white;
 }
 
+.venue-tag:hover {
+    background-color: #0288d1;
+    color: white;
+}
+
 .pdf-tag:hover {
     background-color: #008d15;
     color: white;
