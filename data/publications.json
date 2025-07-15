@@ -49,6 +49,11 @@
         "text": "DOI",
         "class": "code-tag",
         "link": "https://doi.org/10.1145/3706598.3713772"
+      },
+      {
+        "text": "arXiv",
+        "class": "preprint-tag",
+        "link": "https://arxiv.org/abs/2503.06099"
       }
     ]
   },
