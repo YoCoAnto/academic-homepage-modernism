@@ -236,7 +236,7 @@ function loadPublications() {
         // Inside your loadPublications() loop, after you've created pub.tags…
         const doiTag = pub.tags.find((tag) => tag.text === "DOI" && tag.link);
         const arxivTag = pub.tags.find(
-          (tag) => tag.text === "Arxiv" && tag.link
+          (tag) => tag.text === "arXiv" && tag.link
         );
 
         const link = doiTag?.link || arxivTag?.link || null;
@@ -311,7 +311,7 @@ function loadPublications() {
           imgElement.alt = pub.title;
         
           const doiTag = pub.tags.find((tag) => tag.text === "DOI" && tag.link);
-          const arxivTag = pub.tags.find((tag) => tag.text === "Arxiv" && tag.link);
+          const arxivTag = pub.tags.find((tag) => tag.text === "arXiv" && tag.link);
           const link = doiTag?.link || arxivTag?.link || null;
         
           if (link) {

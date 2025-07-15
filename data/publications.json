@@ -12,7 +12,7 @@
         "class": "venue-tag"
       },
       {
-        "text": "Arxiv",
+        "text": "arXiv",
         "class": "preprint-tag",
         "link": "https://arxiv.org/abs/2507.10044"
       }
@@ -71,7 +71,7 @@
         "link": "https://doi.org/10.1109/TVCG.2024.3456325"
       },
       {
-        "text": "Arxiv",
+        "text": "arXiv",
         "class": "preprint-tag",
         "link": "https://arxiv.org/abs/2407.14770"
       }
