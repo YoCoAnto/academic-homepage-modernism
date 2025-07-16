@@ -20,6 +20,20 @@
   },
   {
     "number": 2,
+    "title": "HypoChainer: A Collaborative System Combining LLMs and Knowledge Graphs for Hypothesis-Driven Scientific Discovery",
+    "authors": "Haoran Jiang*, <strong><u>Shaohan Shi</u></strong>*, Yunjie Yao, Chang Jiang, Quan Li",
+    "type": "accept",
+    "isFirstAuthor": true,
+    "image": "assets/image/04.jpg",
+    "tags": [
+      {
+        "text": "VIS'25",
+        "class": "venue-tag"
+      }
+    ]
+  },
+  {
+    "number": 3,
     "title": "ReviseMate: Exploring Contextual Support for Digesting Academic Paper Reviews",
     "authors": "Yuansong Xu, Shuhao Zhang, Yijie Fan, <strong><u>Shaohan Shi</u></strong>, Zhenhui Peng, Quan Li*",
     "type": "accept",
@@ -33,7 +47,7 @@
     ]
   },
   {
-    "number": 3,
+    "number": 4,
     "title": "Advancing Problem-Based Learning with Clinical Reasoning for Improved Differential Diagnosis in Medical Education",
     "authors": "Yuansong Xu, Yuheng Shao, Jiahe Dong, <strong><u>Shaohan Shi</u></strong>, Chang Jiang, Quan Li*",
     "type": "accept",
@@ -58,7 +72,7 @@
     ]
   },
   {
-    "number": 4,
+    "number": 5,
     "title": "SLInterpreter: An Exploratory and Iterative Human-AI Collaborative System for GNN-based Synthetic Lethal Prediction",
     "authors": "Haoran Jiang, <strong><u>Shaohan Shi</u></strong>, Shuhao Zhang, Jie Zheng, Quan Li*",
     "type": "accept",
