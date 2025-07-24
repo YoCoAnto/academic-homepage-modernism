@@ -1,20 +1,46 @@
 [
   {
     "number": 1,
-    "title": "HypoChainer: A Collaborative System Combining LLMs and Knowledge Graphs for Hypothesis-Driven Scientific Discovery",
-    "authors": "Haoran Jiang*, <strong><u>Shaohan Shi</u></strong>*, Yunjie Yao, Chang Jiang, Quan Li",
+    "title": "MEDebiaser: A Human-AI Feedback System for Mitigating Bias in Multi-label Medical Image Classification",
+    "authors": "<strong><u>Shaohan Shi</u></strong>, Yuheng Shao, Haoran Jiang, Yunjie Yao, Zhijun Zhang, Xu Ding*, Quan Li*",
     "type": "accept",
     "isFirstAuthor": true,
-    "image": "assets/image/04.jpg",
+    "image": "assets/image/05.jpg",
+    "pdf": "assets/pdf/05.pdf",
     "tags": [
       {
-        "text": "VIS'25",
+        "text": "UIST'25",
         "class": "venue-tag"
+      },
+      {
+        "text": "arXiv",
+        "class": "preprint-tag",
+        "link": "https://arxiv.org/abs/2507.10044"
       }
     ]
   },
   {
     "number": 2,
+    "title": "HypoChainer: A Collaborative System Combining LLMs and Knowledge Graphs for Hypothesis-Driven Scientific Discovery",
+    "authors": "Haoran Jiang*, <strong><u>Shaohan Shi</u></strong>*, Yunjie Yao, Chang Jiang, Quan Li",
+    "type": "accept",
+    "isFirstAuthor": true,
+    "image": "assets/image/04.jpg",
+    "pdf": "assets/pdf/04.pdf",
+    "tags": [
+      {
+        "text": "VIS'25",
+        "class": "venue-tag"
+      },
+      {
+        "text": "arXiv",
+        "class": "preprint-tag",
+        "link": "https://arxiv.org/abs/2507.17209"
+      }
+    ]
+  },
+  {
+    "number": 3,
     "title": "Advancing Problem-Based Learning with Clinical Reasoning for Improved Differential Diagnosis in Medical Education",
     "authors": "Yuansong Xu, Yuheng Shao, Jiahe Dong, <strong><u>Shaohan Shi</u></strong>, Chang Jiang, Quan Li*",
     "type": "accept",
@@ -39,7 +65,7 @@
     ]
   },
   {
-    "number": 3,
+    "number": 4,
     "title": "SLInterpreter: An Exploratory and Iterative Human-AI Collaborative System for GNN-based Synthetic Lethal Prediction",
     "authors": "Haoran Jiang, <strong><u>Shaohan Shi</u></strong>, Shuhao Zhang, Jie Zheng, Quan Li*",
     "type": "accept",
