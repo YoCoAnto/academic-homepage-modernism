@@ -917,6 +917,16 @@ nav {
     color: white;
 }
 
+.demo-tag {
+    background-color: #f7f7e1;
+    color: #8d9224;
+}
+
+.demo-tag:hover {
+    background-color: #8d9224;
+    color: white;
+}
+
 .highlight {
     color: var(--primary-color);
     font-weight: 600;

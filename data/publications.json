@@ -86,6 +86,11 @@
         "text": "arXiv",
         "class": "preprint-tag",
         "link": "https://arxiv.org/abs/2407.14770"
+      },
+      {
+        "text": "Demo",
+        "class": "demo-tag",
+        "link": "https://github.com/jianghr-shanghaitech/SLInterpreter-Demo"
       }
     ]
   }
